@@ -270,42 +270,29 @@ footer a:hover {
     .section h2 { font-size: 2.4rem; }
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 1rem;
+/* Responsividade principal */
+@media (max-width:768px){
+    .hero h1 { font-size:3rem; }
+    .hero p { font-size:1.2rem; }
+    .hero .buttons, .download-section .buttons { 
+        flex-direction: column; 
+        gap: 1rem; 
     }
-
-    nav {
-        justify-content: center;
-    }
-
-    .hero {
-        padding: 4rem 1.5rem;
-    }
-
-    .hero h1 {
-        font-size: 2.6rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .download-section {
-        padding: 3rem 1.5rem;
-    }
+    .feature-card { margin-bottom:1.5rem; }
 }
 
-@media (max-width: 480px) {
-    .hero h1 { font-size: 2.2rem; }
-    .section h2 { font-size: 2rem; }
+/* Telas muito pequenas, até 300px de largura */
+@media (max-width:300px){
+    header { padding: 0.5rem 1rem; }
+    nav { flex-direction: column; gap: 0.5rem; }
+    nav a { padding: 0.3rem 0.5rem; font-size: 0.9rem; }
+    .hero h1 { font-size:2rem; }
+    .hero p { font-size:1rem; max-width: 95%; }
+    .hero .buttons, .download-section .buttons { gap: 0.5rem; }
+    .feature-card { padding:1rem; }
+    .download-section { padding: 2rem 1rem; }
 }
+
     </style>
 </head>
 <body>
